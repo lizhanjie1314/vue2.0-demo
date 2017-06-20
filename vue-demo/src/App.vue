@@ -2,6 +2,8 @@
   <div id="app">
     <router-view></router-view>
     <router-view name="About"></router-view>
+    <router-view name="left" style="float: left;width: 50%;height: 200px;background: blue;"></router-view>
+    <router-view name="right" style="float: left;width: 50%;height: 200px;background: yellow;"></router-view>
     <!--<router-view name="Count"></router-view>-->
     <!--<router-link to="Count">点击</router-link>-->
   </div>
