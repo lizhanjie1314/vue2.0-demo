@@ -11,6 +11,11 @@ import Home2 from '@/components/home2'
 import Type1 from '@/components/type1'
 import Error from '@/components/error'
 import vFor from '@/components/v-for'
+import vModel from '@/components/v-model'
+import vTab from '@/components/v-tab'
+import vOthers from '@/components/v-others'
+import vDirective from '@/components/v-directive'
+import vExtend from '@/components/v-extend'
 
 require("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
@@ -74,6 +79,31 @@ export default new Router({
       path:'/vFor',
       name:'vFor',
       component:vFor
+    },
+    {
+      path:'/vModel',
+      name:'vModel',
+      component:vModel
+    },
+    {
+      path:'/vTab',
+      name:'vTab',
+      component:vTab
+    },
+    {
+      path:'/vOthers',
+      name:'vOthers',
+      component:vOthers
+    },
+    {
+      path:'/vDirective',
+      name:'vDirective',
+      component:vDirective
+    },
+    {
+      path:'/vExtend',
+      name:'vExtend',
+      component:vExtend
     }
     //{
     //  path: '/',
