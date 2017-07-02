@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>vue2.0之v-set</title>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li v-for="item in arr">{{item}}</li>
+    </ul>
+    <button onclick="updateArr()">更新一下</button><br>
+    {{num}}<br>
+    <button onclick="add()">增加</button>
+</div>
+<script src="js/vue.js" type="text/javascript"></script>
+<script>
+    //vue实例化
+    var dataArr={
+        arr:["jack","king","Dave"],
+        num:'1'
+    };
+    function updateArr() {
+//        dataArr.arr[1]="Kate";
+        Vue.set(dataArr.arr,"1","Kate");
+    }
+    function add() {
+//        dataArr.num++;
+        app.num++;
+        Vue.set(dataArr,'num',100)
+    }
+    var app=new Vue({
+        el:"#box",
+        data:dataArr
+    });
+</script>
+</body>
+</html>

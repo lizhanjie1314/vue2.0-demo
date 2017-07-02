@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>vue2.0实例</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <style>
+        .redCol{color: red;}
+        .yellowCol{color: yellow;}
+        .blueBg{background: blue;}
+    </style>
+</head>
+<body>
+<!--<div id="box" v-bind:class="[yellowCol,blueBg]">vue学习</div>-->
+<div id="box" v-bind:class="{redCol:isRed,blueBg:isBlue,yellowCol:isYellow}">vue学习</div>
+<script src="js/vue.js" type="text/javascript"></script>
+<script>
+    //vue实例化
+    var app=new Vue({
+        el:"#box",
+        data:{
+            isRed:false,
+            isBlue:true,
+            isYellow:true
+        }
+
+    });
+
+//    var app1=new Vue({
+//        el:"#box",
+//        data:{
+//            msg:"快点点啊"
+//        }
+//    });
+//    console.log(document.getElementById("box"));
+//    var box=document.getElementById("box");
+//    box.innerHTML="我是最新值";
+//    console.log(app.msg);
+</script>
+</body>
+</html>
